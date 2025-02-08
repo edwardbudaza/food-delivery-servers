@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Activate Your Food Delivery Account</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style type="text/css">
+      /* Base Styles */
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+        line-height: 1.5;
+        background-color: #f8f8f8;
+        color: #333;
+      }
+      a {
+        color: #ff6600;
+        text-decoration: none;
+      }
+      h1 {
+        font-size: 24px;
+        font-weight: bold;
+        text-align: center;
+        margin: 0;
+        color: #ffffff;
+      }
+      p {
+        margin: 0 0 20px;
+      }
+      /* Layout */
+      .email-wrapper {
+        max-width: 600px;
+        margin: 20px auto;
+        background: #ffffff;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+      }
+      .email-header {
+        background-color: #ff6600;
+        padding: 24px;
+        text-align: center;
+      }
+      .email-body {
+        padding: 24px;
+      }
+      .email-footer {
+        background-color: #f6f6f6;
+        padding: 20px;
+        text-align: center;
+        font-size: 14px;
+        color: #666;
+      }
+      /* Buttons */
+      .button {
+        display: inline-block;
+        background-color: #ff6600;
+        color: #ffffff;
+        font-size: 16px;
+        font-weight: bold;
+        text-align: center;
+        padding: 12px 24px;
+        border-radius: 5px;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="email-wrapper">
+      <div class="email-header">
+        <h1>Welcome to Foodie Kulture</h1>
+      </div>
+      <div class="email-body">
+        <p>Hi <strong><%= name %></strong>,</p>
+        <p>
+          Your taste buds are in for a treat! Thank you for signing up with 
+          <strong>Foodie Kulture</strong>. To start ordering delicious meals, 
+          activate your account with the code below:
+        </p>
+        <h2 style="text-align: center; font-size: 28px; color: #ff6600;">
+          <%= activationCode %>
+        </h2>
+        <p style="text-align: center;">
+          Enter this code on the activation page within the next 5 minutes.
+        </p>
+        <p style="text-align: center;">
+          <a href="[Your Activation URL]" class="button">Activate Now</a>
+        </p>
+        <p>
+          If you didn't sign up, simply ignore this email – no action is needed.
+        </p>
+      </div>
+      <div class="email-footer">
+        <p>
+          Need help? Contact our support team at
+          <a href="mailto:foodie.kulture@gmail.com">foodie.kulture@gmail.com</a>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
